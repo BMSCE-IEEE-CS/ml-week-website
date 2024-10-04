@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ /* html,body{
+    background: linear-gradient(to right top, #810ccf, #4c28a8, #26287c, #14204c, #11131e);
+  } */
+.container-events-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.container-events-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tracks{
+  width: 100vw;
+}
+.box{
+    width: 90vw;
+    /* height:10em; */
+    /* border: 2px solid wheat; */
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(17,19,30,1) 55%, rgba(0,0,0,1) 79%);
+    border-radius: 20px;
+    /* margin: auto; */
+    /* margin-top: 9em; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#hackathonDesc{
+  text-align: justify;
+}
+.poster{
+    /* width: 35em; */
+}
+.poster img{
+  padding-top: 0px;
+    /* width: 35em; */
+    height: 30em;
+}
+.content{
+    width: 30em;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.prize-team{
+  width: 30em;
+  margin-top: 0px;
+}
+.details-events h4{
+  font-size: 1.5em;
+  font-family: "Bruno Ace", cursive;
+  background: #810ccf;
+  background: linear-gradient(to top left, #810ccf 0%, #cf44a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.content h1, .small-content h1, .container-events-column h1{
+
+    font-size: 3em;
+    font-weight: 600;
+    font-family: "Bruno Ace", cursive;
+    background: #810ccf;
+    background: linear-gradient(to top left, #810ccf 0%, #cf44a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tracksHeading{
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+.small-content h1{
+  font-size: 2.8em;
+  margin-top: 133px;
+}
+.card-content h3{
+  
+  font-size: 1.79em;
+  font-weight: 600;
+  font-family: "Bruno Ace", cursive;
+  background: #810ccf;
+  background: linear-gradient(to top left, #810ccf 0%, #cf44a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-content h2{
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Bruno Ace", cursive;
+  background: #810ccf;
+  background: linear-gradient(to top left, #810ccf 0%, #cf44a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.small-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  /* padding: 0px 14px; */
+  text-align: justify;
+  padding: 0px 40px;
+}
+.content p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+.card-content{
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+.card-icon{
+  font-size: 5em;
+}
+.small-box{
+    width: 30em;
+    height: 60em;
+    /* border: 2px solid white;  */
+    border-radius: 20px;
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(17,19,30,1) 55%, rgba(0,0,0,1) 79%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+}
+.small-poster{
+    
+}
+.small-poster img{
+    margin-top: 30px;
+    height: 20em;
+}
+.small-content{
+    height: 28em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: space-around;
+}
+/* cards code for tracks */
+.card {
+  width: 25em;
+  height: 300px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .card2 {
+  width: 25em;
+  height: 300px;
+  background-color: #1a1a1a;
+  border-radius:0;
+  transition: all .2s;
+ }
+ 
+ .card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
+
+@media (max-width: 1048px){
+  #hackathonDesc{
+    margin-top: 30px;
+    position: relative;
+    right: 12px;
+    text-align: justify;
+  }
+}
+
+
+@media (max-width: 1124px){
+  .card{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 956px) {
+  .box{
+    width: 50em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .content{
+    height: 30em;
+  }
+  .small-box{
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 776px){
+  .box{
+    width: 42em;
+  }
+}
+
+@media (max-width: 688px){
+  .box{
+    width: 36em;
+  }
+}
+@media (max-width:584px){
+  .box{
+    width: 32em;
+    height: 60em;
+    font-size: 0.9;
+  }
+
+  #hackathonDesc{
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    left: 3px;
+  }
+  .container-events-column h1{
+    font-size: 2.5em;
+  }
+  .card{
+    margin-top: 20px;
+  }
+  .poster img{
+
+    height: 20em;
+  }
+  .content{
+    text-align: center;
+    margin: 0px;
+    padding: 0px 50px;
+  }
+  .small-content p{
+    padding: 0px 47px;
+  }
+  .small-content h1{
+    margin-top: 2.3em;
+  }
+  .forensics-content h1{
+    margin-top: 4.5em;
+    font-size: 1.9em;
+  }
+  .content p{
+    font-size: 0.9em;
+  }
+  .hack-head{
+    text-align: center;
+  }
+}
+
+@media  (max-width: 520px) {
+  .box{
+    width: 29em;
+  }
+
+  #hackascthonDesc{
+    text-align: justify;
+    font-size: 13px;
+    position: relative;
+    left: 4px;
+    color: red;
+  }
+}
+
+
+@media (max-width: 480px){
+  .small-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+    height: 66em;
+    padding: 0px 10px;
+  }
+
+  .small-content p{
+    font-size: 15px;
+    text-align:center;
+    padding: 0px 80px;
+  }
+  .small-content h1{
+    margin-top: 5.3em;
+  }
+
+  #forensics{
+    margin-top: 4.3em;
+    padding: 0px 30px;
+  }
+  #forensicsBox{
+    height: 60em;
+    padding: 0px 0px;
+  }
+  #forensicsDesc{
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 450px){
+  .box{
+    margin: auto;
+    width: 24.7em;
+  }
+  #hackathonDesc{
+    padding: 0px 22px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* to create a glitch button */
+.button-events,.button-events::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #810ccf;
+    background: linear-gradient(to top left, #810ccf 0%, #cf44a1 100%);
+    font-weight: 400;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    position: relative;
+    margin-top: 7px;
+  }
+  
+  .button-events::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'Register Now';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .button-events:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+  }
+  
+  .button-events:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  }
+  
+  .button-events:hover {
+    background-color: transparent;
+    border: 1px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+  
